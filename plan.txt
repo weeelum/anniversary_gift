@@ -1,0 +1,31 @@
+august 24, 2024
+1. finish changing "while 'state'" to "while True" ✅
+
+2. although each question is unique, it should be fine to abstract away
+the messages in question ✅
+
+3. abstract this away: q_list[0].display_choice_qstn() at beginning of
+each question ✅
+
+4. abstract this away: player_q0_answer = q_list[0].choose_answer() with
+a return value for player_q0_answer (this one didn't seem to work) ❌
+
+5. abstract all this away into one function, update_kisses(kisses) or
+something like that:      
+    add_kisses(1)
+    display_kiss_balance()
+    append_kiss(1) ✅
+
+6. abstract this away into a song(num) function:
+    song_list[0].display_song()
+    print(
+        "\nThis song is how I sometimes feel when we sit together "
+        "in silence. Enjoy!\n\n"
+        "Now, for a hard one. 😈"
+    )
+and move the string's last sentence into the next abstracted portion
+where we choose to advance to next question. ✅
+
+7. for the display_playlist() function at the end, create a list of song
+dictionaries to loop through, instead of trying to loop through a bunch
+of class instances. ✅
